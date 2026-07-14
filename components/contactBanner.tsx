@@ -12,14 +12,14 @@ const ContactBanner = ({
 
   return (
     <section className="px-4 sm:px-6 lg:px-8 py-4">
-      <div className="mx-auto max-w-6xl rounded-3xl bg-blue-900 px-6 py-14 sm:px-12 text-center">
+      <div className="mx-auto max-w-7xl rounded-3xl bg-blue-900 px-6 py-14 sm:px-12 text-center">
         <h2 className="text-3xl sm:text-4xl font-extrabold text-white">{title}</h2>
         <p className="mt-4 text-sm sm:text-base text-blue-100 max-w-2xl mx-auto">{description}</p>
 
-        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6">
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6 lg:gap-18">
           <button
             type="button"
-            className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-blue-900 font-medium hover:bg-blue-50 transition-colors duration-200"
+            className="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 text-blue-900 font-medium hover:bg-blue-50 transition-colors duration-200"
           >
             Contact INSCOA
             <ArrowRight className="w-4 h-4" />
