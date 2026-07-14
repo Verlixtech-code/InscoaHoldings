@@ -1,12 +1,14 @@
-import Image from "next/image";
+import ContactBanner from "@/components/contactBanner";
+import MainHero from "@/components/mainHero";
+import ProjectsSection from "@/components/Projectssection";
 
 export default function Home() {
   return (
     <div>
       <main >
-       <div >
-        Hello world
-       </div>
+       <MainHero /> 
+       <ProjectsSection/>
+       <ContactBanner />
       </main>
     </div>
   );
