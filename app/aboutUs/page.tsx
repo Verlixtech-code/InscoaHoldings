@@ -2,6 +2,7 @@ import PageHero from "@/components/pageHero";
 import WhyChooseInscoa from "./whyChooseInscoa";
 import Divisions from "@/components/Divisions";
 import ContactBanner from "@/components/contactBanner";
+import Image from "next/image";
 
 export default function AboutUsPage() {
     return (
@@ -13,7 +14,7 @@ export default function AboutUsPage() {
             />
 
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
-                <div className="text-5xl font-bold mb-8 text-center">
+                <div className="text-3xl font-bold mb-8 text-center">
                     Our Story
                 </div>
                 <div className="space-y-6 text-center">
@@ -23,13 +24,23 @@ export default function AboutUsPage() {
                 </div>
             </div>
 
-            <WhyChooseInscoa/>
+            <div className="flex justify-center">
+                <Image
+                    src="/Inscoa Logo.png"
+                    alt="INSCOA"
+                    width={500}
+                    height={220}
+                    className="w-full max-w-lg object-contain"
+                />
+            </div>
+
+            <WhyChooseInscoa />
 
             <Divisions />
 
             <ContactBanner
-             title="Let's Discuss Your Next Project"
-             description="From feasibility through to construction supervision, our team brings the same rigour to every project we take on." />
+                title="Let's Discuss Your Next Project"
+                description="From feasibility through to construction supervision, our team brings the same rigour to every project we take on." />
 
 
 
