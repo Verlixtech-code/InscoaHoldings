@@ -10,14 +10,14 @@ export default function Home() {
   return (
     <div>
       <main >
-       <div >
-        Hello world
+        <MainHero /> 
         <Divisions />
         <AboutCard/>
-       </div>
-       <MainHero /> 
-       <ProjectsSection/>
-       <ContactBanner />
+        <ProjectsSection/>
+        <ContactBanner
+          title = "Have a Project in Mind?"
+          description = "Planning an infrastructure investment or looking for an engineering partner with a proven track record? Our team is ready to talk."
+ />
       </main>
     </div>
   );

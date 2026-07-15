@@ -1,5 +1,7 @@
 import PageHero from "@/components/pageHero";
 import WhyChooseInscoa from "./whyChooseInscoa";
+import Divisions from "@/components/Divisions";
+import ContactBanner from "@/components/contactBanner";
 
 export default function AboutUsPage() {
     return (
@@ -23,7 +25,13 @@ export default function AboutUsPage() {
 
             <WhyChooseInscoa/>
 
-            
+            <Divisions />
+
+            <ContactBanner
+             title="Let's Discuss Your Next Project"
+             description="From feasibility through to construction supervision, our team brings the same rigour to every project we take on." />
+
+
 
         </div>
     )

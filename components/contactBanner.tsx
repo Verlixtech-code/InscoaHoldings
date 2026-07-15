@@ -5,10 +5,7 @@ interface ContactBannerProps {
   description?: string;
 }
 
-const ContactBanner = ({
-  title = "Have a Project in Mind?",
-  description = "Planning an infrastructure investment or looking for an engineering partner with a proven track record? Our team is ready to talk.",
-}: ContactBannerProps) => {
+const ContactBanner = ({ title,description }: ContactBannerProps) => {
 
   return (
     <section className="px-4 sm:px-6 lg:px-8 py-4">
