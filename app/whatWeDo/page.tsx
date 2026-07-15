@@ -28,10 +28,11 @@ export default function WhatWeDo() {
                     alt="INSCOA"
                     width={500}
                     height={220}
-                    className="w-full max-w-lg object-contain"
+                    className="w-full max-w-lg h-auto object-contain"
                 />
             </div>
-
         </div>
+
+        
     )
 }
