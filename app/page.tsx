@@ -1,4 +1,6 @@
-import Image from "next/image";
+import ContactBanner from "@/components/contactBanner";
+import MainHero from "@/components/mainHero";
+import ProjectsSection from "@/components/Projectssection";
 
 import Divisions from "@/components/Divisions";
 
@@ -13,6 +15,9 @@ export default function Home() {
         <Divisions />
         <AboutCard/>
        </div>
+       <MainHero /> 
+       <ProjectsSection/>
+       <ContactBanner />
       </main>
     </div>
   );
