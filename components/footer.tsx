@@ -43,7 +43,7 @@ export default function Footer() {
                         <h4 className="border-b border-white/20 pb-2 text-sm font-medium text-white/70">Navigation</h4>
                         <ul className="mt-4 space-y-3 text-sm font-semibold">
                             <li><a href="/" className="hover:text-white/80">Home</a></li>
-                            <li><a href="/about-us" className="hover:text-white/80">About Us</a></li>
+                            <li><a href="/aboutUs" className="hover:text-white/80">About Us</a></li>
                             <li><a href="/divisions" className="hover:text-white/80">Divisions</a></li>
                             <li><a href="/services" className="hover:text-white/80">Services</a></li>
                             <li><a href="/projects" className="hover:text-white/80">Projects</a></li>
@@ -65,8 +65,8 @@ export default function Footer() {
                     <div>
                         <h4 className="border-b border-white/20 pb-2 text-sm font-medium text-white/70">Resources</h4>
                         <ul className="mt-4 space-y-3 text-sm font-semibold">
-                            <li><a href="/project-portfolio" className="hover:text-white/80">Project Portfolio</a></li>
-                            <li><a href="/contact-us" className="hover:text-white/80">Contact Us</a></li>
+                            <li><a href="/#" className="hover:text-white/80">Project Portfolio</a></li>
+                            <li><a href="/#" className="hover:text-white/80">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -75,8 +75,8 @@ export default function Footer() {
 
                 <div className="mt-6 flex flex-col items-center gap-4 text-sm text-white/80 sm:flex-row sm:justify-between">
                     <div className="flex gap-6">
-                        <a href="/privacy-policy" className="hover:text-white">Privacy Policy</a>
-                        <a href="/terms-conditions" className="hover:text-white">Terms &amp; Conditions</a>
+                        <a href="/#" className="hover:text-white">Privacy Policy</a>
+                        <a href="/#" className="hover:text-white">Terms &amp; Conditions</a>
                     </div>
                     <p>Company No. PV 121084 &middot; CIDA Registration 23912 &mdash; C5</p>
                 </div>
