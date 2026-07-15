@@ -6,6 +6,7 @@ import Divisions from "@/components/Divisions";
 
 import AboutCard from "@/components/AboutCard";
 import Image from "next/image";
+import VisionMission from "@/components/visionMission";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <MainHero />
         <Divisions />
         <AboutCard />
+        <VisionMission/>
         <ProjectsSection />
         <ContactBanner
           title="Have a Project in Mind?"
