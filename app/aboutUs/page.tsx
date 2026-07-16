@@ -4,6 +4,7 @@ import Divisions from "@/components/Divisions";
 import ContactBanner from "@/components/contactBanner";
 import Image from "next/image";
 import VisionMission from "@/components/visionMission";
+import WorkSectors from "./workSector";
 
 export default function AboutUsPage() {
     return (
@@ -40,6 +41,8 @@ export default function AboutUsPage() {
             <WhyChooseInscoa />
 
             <Divisions />
+
+            <WorkSectors />
 
             <ContactBanner
                 title="Let's Discuss Your Next Project"
