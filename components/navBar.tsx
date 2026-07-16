@@ -68,9 +68,18 @@ export function NavBar() {
               What We Do
             </Link>
 
+             <Link
+              href="/projects"
+              className={`transition hover:text-blue-800 ${
+                pathname === "/projects" ? "text-blue-800" : "text-black"
+              }`}
+            >
+              Projects
+            </Link>
+
             {/* Projects Dropdown */}
 
-            <div className="relative group">
+            {/* <div className="relative group">
               <button
                 className={`flex items-center cursor-pointer gap-1 transition ${
                   pathname.startsWith("/projects")
@@ -107,7 +116,7 @@ export function NavBar() {
                   </Link>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <Link
               href="/productSupply"
