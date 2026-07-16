@@ -133,7 +133,7 @@ export function NavBar() {
           <div className="hidden lg:block">
             <Link
               href="/contact"
-              className="px-6 py-2 rounded-full text-white text-md font-semibold bg-gradient-to-r from-blue-600 to-blue-800 hover:scale-105 transition"
+              className="px-6 py-2 rounded-full text-white text-md font-semibold bg-linear-to-r from-blue-600 to-blue-800 hover:scale-105 transition"
             >
               Contact Us
             </Link>
@@ -232,7 +232,7 @@ export function NavBar() {
 
             <Link
               href="/contact"
-              className="mt-4 text-center py-2 rounded-full text-white bg-gradient-to-r from-blue-600 to-blue-800"
+              className="mt-4 text-center py-2 rounded-full text-white bg-linear-to-r from-blue-600 to-blue-800"
               onClick={closeMobileMenu}
             >
               Contact Us

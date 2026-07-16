@@ -75,7 +75,7 @@ export default function AboutCard() {
                 alt="Engineering"
                 width={700}
                 height={450}
-                className="h-[280px] w-full rounded-2xl object-cover"
+                className="h-70 w-full rounded-2xl object-cover"
               />
             </div>
 
