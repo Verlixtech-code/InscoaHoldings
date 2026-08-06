@@ -5,6 +5,7 @@ import ContactBanner from "@/components/contactBanner";
 import Image from "next/image";
 import VisionMission from "@/components/visionMission";
 import WorkSectors from "./workSector";
+import InscoaLogo from "@/components/InscoaLogo";
 
 export default function AboutUsPage() {
     return (
@@ -26,15 +27,7 @@ export default function AboutUsPage() {
                 </div>
             </div>
 
-            <div className="flex justify-center  py-10">
-                <Image
-                    src="/Inscoa Logo.png"
-                    alt="INSCOA"
-                    width={500}
-                    height={220}
-                    className="w-full max-w-lg object-contain"
-                />
-            </div>
+            <InscoaLogo />
 
             <VisionMission />
 
@@ -50,15 +43,7 @@ export default function AboutUsPage() {
 
 
 
-            <div className="flex justify-center py-10">
-                <Image
-                    src="/Inscoa Logo.png"
-                    alt="INSCOA"
-                    width={500}
-                    height={220}
-                    className="w-full max-w-lg object-contain"
-                />
-            </div>
+            <InscoaLogo />
 
         </div>
     )
