@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { projects } from "../data/projects";
+import Link from "next/link";
 
 export default function ProjectsSection() {
   return (
@@ -40,13 +41,13 @@ export default function ProjectsSection() {
 
         {/* CTA */}
         <div className="mt-12 flex justify-center">
-          <button
+          <Link href="/projects"
             type="button"
             className="inline-flex items-center gap-2 rounded-lg bg-blue-900 px-6 py-3 text-white font-medium hover:bg-blue-800 transition-colors duration-200"
           >
             View All Projects
             <ArrowRight className="w-4 h-4" />
-          </button>
+          </Link>
         </div>
       </div>
     </section>

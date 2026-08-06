@@ -1,4 +1,5 @@
 import ContactBanner from "@/components/contactBanner";
+import InscoaLogo from "@/components/InscoaLogo";
 import PageHero from "@/components/pageHero";
 import ProjectsSection from "@/components/Projectssection";
 import { projects } from "@/data/projects";
@@ -47,15 +48,7 @@ export default function ProjectsPage() {
         description="Our engineering and supply teams are ready to bring the same rigour to your next project."
       />
 
-      <div className="flex justify-center py-10">
-        <Image
-          src="/Inscoa Logo.png"
-          alt="INSCOA"
-          width={500}
-          height={220}
-          className="w-full max-w-lg object-contain"
-        />
-      </div>
+      <InscoaLogo />
 
       
     </div>

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function AboutCard() {
   return (
@@ -36,10 +37,12 @@ export default function AboutCard() {
                 deliver infrastructure that matters.
               </p>
 
-              <button className="mt-8 flex items-center gap-2 rounded-xl bg-[#1B4F8C] px-7 py-3 text-white transition duration-300 hover:bg-[#163D70]">
-                Learn more about INSCOA
-                <ArrowRight size={18} />
-              </button>
+              <Link href="/aboutUs">
+                <button className="mt-8 flex items-center gap-2 rounded-xl bg-[#1B4F8C] px-7 py-3 text-white transition duration-300 hover:bg-[#163D70]">
+                  Learn more about INSCOA
+                  <ArrowRight size={18} />
+                </button>
+              </Link>
             </div>
 
             {/* Right */}
@@ -87,10 +90,12 @@ export default function AboutCard() {
                 decade of hands-on delivery experience to every site.
               </p>
 
-              <button className="mt-8 flex items-center gap-2 rounded-xl bg-[#1B4F8C] px-7 py-3 text-white transition duration-300 hover:bg-[#163D70]">
-                See Our Engineering Work
-                <ArrowRight size={18} />
-              </button>
+              <Link href="/whatWeDo">
+                <button className="mt-8 flex items-center gap-2 rounded-xl bg-[#1B4F8C] px-7 py-3 text-white transition duration-300 hover:bg-[#163D70]">
+                  See Our Engineering Work
+                  <ArrowRight size={18} />
+                </button>
+              </Link>
             </div>
           </div>
         </div>

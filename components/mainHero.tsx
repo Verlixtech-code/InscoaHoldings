@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const MainHero = () => {
   return (
-    <div className="relative w-full h-[100vh]">
+    <div className="relative w-full h-[100vh] max-md:mt-8">
       {/* Background Image */}
       <Image
         src="/mainHero.svg"
@@ -32,7 +32,7 @@ const MainHero = () => {
           international firms.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4 text-lg">
-          <Link href="/contact" className="flex items-center justify-center gap-2 px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition duration-300">
+          <Link href="/contactUs" className="flex items-center justify-center gap-2 px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition duration-300">
             Contact Us
             <ArrowRight className="w-5 h-5" />
           </Link>
