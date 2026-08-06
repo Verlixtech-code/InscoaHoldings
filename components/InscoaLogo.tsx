@@ -16,7 +16,7 @@ export default function InscoaLogo({
   return (
     <div className="flex justify-center px-4 py-8">
       <Image
-        src="/Inscoa Logo.png"
+        src="/Inscoa Logo.webp"
         alt={alt}
         width={width}
         height={height}
