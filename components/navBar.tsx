@@ -184,9 +184,20 @@ export function NavBar() {
               What We Do
             </Link>
 
+            <Link
+              href="/projects"
+              className={`hover:text-blue-800 ${
+                pathname === "/projects" ? "text-blue-800" : "text-black"
+              }`}
+              onClick={closeMobileMenu}
+            >
+              Projects
+            </Link>
+
+
             {/* Mobile Projects Dropdown */}
 
-            <button
+            {/* <button
               onClick={() => setMobileProjectsOpen(!mobileProjectsOpen)}
               className={`flex items-center cursor-pointer justify-between hover:text-blue-800 ${
                 pathname.startsWith("/projects") ? "text-blue-800" : "text-black"
@@ -194,9 +205,9 @@ export function NavBar() {
             >
               Projects
               <ChevronDown size={18} />
-            </button>
+            </button> */}
 
-            {mobileProjectsOpen && (
+            {/* {mobileProjectsOpen && (
               <div className="pl-4 flex flex-col gap-2 text-sm">
                 <Link
                   href="/projects/projects01"
@@ -218,7 +229,7 @@ export function NavBar() {
                   projects02
                 </Link>
               </div>
-            )}
+            )} */}
 
             <Link
               href="/productSupply"
@@ -231,7 +242,7 @@ export function NavBar() {
             </Link>
 
             <Link
-              href="/contact"
+              href="/contactUs"
               className="mt-4 text-center py-2 rounded-full text-white bg-linear-to-r from-blue-600 to-blue-800"
               onClick={closeMobileMenu}
             >

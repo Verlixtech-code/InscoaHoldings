@@ -1,4 +1,5 @@
 import { ArrowRight, Phone } from "lucide-react";
+import Link from "next/link";
 
 interface ContactBannerProps {
   title?: string;
@@ -14,6 +15,7 @@ const ContactBanner = ({ title,description }: ContactBannerProps) => {
         <p className="mt-4 text-sm sm:text-base text-blue-100 mx-auto text-center max-w-4xl">{description}</p>
 
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6 lg:gap-18">
+          <Link  href="/contactUs">
           <button
             type="button"
             className="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 text-blue-900 font-medium hover:bg-blue-50 transition-colors duration-200"
@@ -21,6 +23,7 @@ const ContactBanner = ({ title,description }: ContactBannerProps) => {
             Contact INSCOA
             <ArrowRight className="w-4 h-4" />
           </button>
+          </Link>
 
           <div className="inline-flex items-center gap-2 text-white font-medium hover:text-blue-100 transition-colors duration-200">
             <Phone className="w-4 h-4" />

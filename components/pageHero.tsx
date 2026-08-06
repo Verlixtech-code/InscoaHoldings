@@ -17,10 +17,10 @@ export default function PageHero({image,title,description}:pageHeroProps) {
                 priority
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center text-white">
-                <div className="text-5xl font-bold">
+                <div className="text-4xl md:text-5xl font-bold">
                     {title}
                 </div>
-                <div className="text-lg mt-4 max-w-4xl">
+                <div className="text-md md:text-lg mt-4 max-w-4xl">
                     {description}
                 </div>
             </div>

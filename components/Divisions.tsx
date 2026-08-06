@@ -100,14 +100,14 @@ function Card({ division }: { division: (typeof divisions)[0] }) {
         {division.title}
       </h3>
 
-      <p className="mb-8 min-h-[90px] text-sm leading-6 text-gray-500">
+      <p className="min-h-[80px] text-sm leading-6 text-gray-500">
         {division.description}
       </p>
 
-      <button className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#1B4F8C] py-3 text-sm font-medium text-white transition hover:bg-[#173f77]">
+      {/* <button className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#1B4F8C] py-3 text-sm font-medium text-white transition hover:bg-[#173f77]">
         Learn more
         <ArrowRight size={16} />
-      </button>
+      </button> */}
     </div>
   );
 }
