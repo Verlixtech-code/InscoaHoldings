@@ -46,7 +46,7 @@ export default function AboutCard() {
             {/* Right */}
             <div className="flex justify-center">
               <Image
-                src="/Inscoa Logo.png"
+                src="/Inscoa Logo.webp"
                 alt="INSCOA"
                 width={500}
                 height={220}
