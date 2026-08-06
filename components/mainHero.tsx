@@ -19,19 +19,19 @@ const MainHero = () => {
 
       {/* Hero Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center text-white">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-2 md:mb-4">
           Engineering Sri Lanka's
         </h1>
         <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold">
           Infrastructure Future
         </h2>
-        <p className="mt-6 text-lg max-w-3xl text-gray-200">
+        <p className="mt-6 text-md md:text-lg max-w-3xl text-gray-200">
           INSCOA Holdings is a CIDA-registered engineering, construction and
           project development group. We deliver water, power, transport and
           infrastructure solutions across Sri Lanka in partnership with leading
           international firms.
         </p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 text-lg">
+        <div className="mt-8 flex flex-col sm:flex-row gap-4 text-md md:text-lg">
           <Link href="/contactUs" className="flex items-center justify-center gap-2 px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition duration-300">
             Contact Us
             <ArrowRight className="w-5 h-5" />

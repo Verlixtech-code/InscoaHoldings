@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import InscoaLogo from "./InscoaLogo";
 
 export default function AboutCard() {
   return (
@@ -44,7 +45,7 @@ export default function AboutCard() {
             </div>
 
             {/* Right */}
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
               <Image
                 src="/Inscoa Logo.webp"
                 alt="INSCOA"
@@ -52,7 +53,8 @@ export default function AboutCard() {
                 height={220}
                 className="w-full max-w-lg object-contain"
               />
-            </div>
+            </div> */}
+            <InscoaLogo />
           </div>
         </div>
 

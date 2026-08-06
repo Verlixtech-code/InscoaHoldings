@@ -38,7 +38,7 @@ export default function Divisions() {
   }, []);
 
   return (
-    <section className="bg-[#f7f8fb] py-20">
+    <section className="bg-[#f7f8fb] py-16 md:py-20">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-12 text-center">
           <h2 className="font-Headings text-4xl font-bold text-gray-900">
