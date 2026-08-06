@@ -44,29 +44,29 @@ export default function Footer() {
                         <ul className="mt-4 space-y-3 text-sm font-semibold">
                             <li><a href="/" className="hover:text-white/80">Home</a></li>
                             <li><a href="/aboutUs" className="hover:text-white/80">About Us</a></li>
-                            <li><a href="/divisions" className="hover:text-white/80">Divisions</a></li>
-                            <li><a href="/services" className="hover:text-white/80">Services</a></li>
+                            <li><a href="#" className="hover:text-white/80">Divisions</a></li>
+                            <li><a href="#" className="hover:text-white/80">Services</a></li>
                             <li><a href="/projects" className="hover:text-white/80">Projects</a></li>
-                            <li><a href="/products-supply" className="hover:text-white/80">Products &amp; Supply</a></li>
-                            <li><a href="/partners" className="hover:text-white/80">Partners</a></li>
+                            <li><a href="#" className="hover:text-white/80">Products &amp; Supply</a></li>
+                            <li><a href="#" className="hover:text-white/80">Partners</a></li>
                         </ul>
                     </div>
 
                     <div>
                         <h4 className="border-b border-white/20 pb-2 text-sm font-medium text-white/70">What We Do</h4>
                         <ul className="mt-4 space-y-3 text-sm font-semibold">
-                            <li><a href="/inscoa-consultancy" className="hover:text-white/80">Inscoa Consultancy</a></li>
-                            <li><a href="/inscoa-engineering" className="hover:text-white/80">Inscoa Engineering</a></li>
-                            <li><a href="/inscoa-real-estate" className="hover:text-white/80">Inscoa Real Estate</a></li>
-                            <li><a href="/inscoa-supply-services" className="hover:text-white/80">Inscoa Supply &amp; Services</a></li>
+                            <li><a href="/#" className="hover:text-white/80">Inscoa Consultancy</a></li>
+                            <li><a href="/#" className="hover:text-white/80">Inscoa Engineering</a></li>
+                            <li><a href="/#" className="hover:text-white/80">Inscoa Real Estate</a></li>
+                            <li><a href="/#" className="hover:text-white/80">Inscoa Supply &amp; Services</a></li>
                         </ul>
                     </div>
 
                     <div>
                         <h4 className="border-b border-white/20 pb-2 text-sm font-medium text-white/70">Resources</h4>
                         <ul className="mt-4 space-y-3 text-sm font-semibold">
-                            <li><a href="/#" className="hover:text-white/80">Project Portfolio</a></li>
-                            <li><a href="/#" className="hover:text-white/80">Contact Us</a></li>
+                            <li><a href="/projects" className="hover:text-white/80">Project Portfolio</a></li>
+                            <li><a href="/contactUs" className="hover:text-white/80">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
