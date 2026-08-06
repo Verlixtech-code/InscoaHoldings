@@ -1,4 +1,5 @@
 import ContactBanner from "@/components/contactBanner";
+import InscoaLogo from "@/components/InscoaLogo";
 import PageHero from "@/components/pageHero";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
@@ -262,15 +263,7 @@ export default function WhatWeDo() {
                 description="Whichever division fits your project, our team is ready to talk it through."
             />
 
-            <div className="flex justify-center py-10">
-                <Image
-                    src="/Inscoa Logo.png"
-                    alt="INSCOA"
-                    width={500}
-                    height={220}
-                    className="w-full max-w-lg h-auto object-contain"
-                />
-            </div>
+             <InscoaLogo />
         </div>
 
         
