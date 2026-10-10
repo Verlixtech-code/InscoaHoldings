@@ -29,7 +29,7 @@ export default async function WhatWeDo({
           {/* Tabs */}
           <nav
             aria-label="Divisions"
-            className="mb-10 flex flex-wrap justify-center gap-x-8 gap-y-2"
+            className="mb-10 grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-8 sm:gap-y-2"
           >
             {divisions.map((d) => {
               const active = d.slug === division.slug;
@@ -39,7 +39,7 @@ export default async function WhatWeDo({
                   href={`/whatWeDo?division=${d.slug}`}
                   scroll={false}
                   aria-current={active ? "page" : undefined}
-                  className={`border-b-2 px-4 py-3 text-sm transition-colors ${
+                  className={`border-b-2 px-3 py-3 text-center text-sm transition-colors sm:px-4 ${
                     active
                       ? "border-[#1B4F8C] font-semibold text-[#1B4F8C]"
                       : "border-transparent text-gray-600 hover:text-[#1B4F8C]"
@@ -150,6 +150,11 @@ export default async function WhatWeDo({
         </div>
       </section>
 
+      <div className="px-5 md:pt-4 text-center sm:px-8 lg:px-12">
+        <h2 className="font-Headings text-2xl font-semibold text-gray-900 md:text-3xl ">
+          Key Associated Partners
+        </h2>
+      </div>
       <PartnersMarquees />
 
       <ContactBanner

@@ -13,12 +13,13 @@ const row1: LogoItem[] = [
   { name: "MarqueesImg03", image: "logos/image 43.svg" },
   { name: "MarqueesImg04", image: "logos/image 49.svg" },
   { name: "MarqueesImg05", image: "logos/image 45.svg" },
+  { name: "MarqueesImg06", image: "logos/image 33.svg" },
 ];
 
 const row2: LogoItem[] = [
-  { name: "CRB", image: "logos/image 48.svg" },
-  { name: "Nalanda College", image: "logos/image 44.svg" },
-  { name: "McDonalds", image: "logos/image 51.svg" },
+  { name: "MarqueesImg07", image: "logos/image 48.svg" },
+  { name: "MarqueesImg08", image: "logos/image 44.svg" },
+  { name: "MarqueesImg09", image: "logos/image 51.svg" },
 ];
 
 // Combine both rows
@@ -26,8 +27,8 @@ const allLogos: LogoItem[] = [...row1, ...row2];
 
 export default function PartnersMarquees() {
   return (
-    <section className="w-full bg-background overflow-hidden md:py-8">
-      <div className="max-w-7xl mx-auto ">
+    <section className="w-full bg-background overflow-hidden md:py-10">
+      <div className="w-full">
 
         {/* Desktop View - Horizontal Marquees */}
         <div className="hidden md:block space-y-2">
@@ -110,7 +111,7 @@ export default function PartnersMarquees() {
         </div>
 
         {/* Mobile View - Vertical Marquees */}
-        <div className="md:hidden flex gap-4">
+        <div className="md:hidden flex gap-4 max-w-7xl mx-auto px-4 pt-6">
           {/* First Bar - Top to Bottom */}
           <div className="flex-1">
             <div className="relative h-96 w-full overflow-hidden rounded-lg border-[#9C9C9C] bg-muted/30">
@@ -119,7 +120,7 @@ export default function PartnersMarquees() {
                   {allLogos.map((logo, idx) => (
                     <div
                       key={idx}
-                      className="flex items-center justify-center w-full h-20 bg-muted border-border rounded-lg border-[#9C9C9C] hover:border-accent transition-colors duration-300 flex-shrink-0 p-2"
+                      className="flex items-center justify-center w-full h-20 bg-muted border-border border-2 rounded-lg border-[#9C9C9C] hover:border-accent transition-colors duration-300 flex-shrink-0 p-2"
                     >
                       <Image 
                         src={logo.image} 
@@ -135,7 +136,7 @@ export default function PartnersMarquees() {
                   {allLogos.map((logo, idx) => (
                     <div
                       key={`duplicate-${idx}`}
-                      className="flex items-center justify-center w-full h-20 bg-muted border-border rounded-lg border-[#9C9C9C] hover:border-accent transition-colors duration-300 flex-shrink-0 p-2"
+                      className="flex items-center justify-center w-full h-20 bg-muted border-border border-2 rounded-lg border-[#9C9C9C] hover:border-accent transition-colors duration-300 flex-shrink-0 p-2"
                     >
                       <Image 
                         src={logo.image} 
@@ -159,7 +160,7 @@ export default function PartnersMarquees() {
                   {allLogos.map((logo, idx) => (
                     <div
                       key={idx}
-                      className="flex items-center justify-center w-full h-20 bg-muted border-border rounded-lg border-[#9C9C9C] hover:border-accent transition-colors duration-300 flex-shrink-0 p-2"
+                      className="flex items-center justify-center w-full h-20 bg-muted border-border border-2 rounded-lg border-[#9C9C9C] hover:border-accent transition-colors duration-300 flex-shrink-0 p-2"
                     >
                       <Image 
                         src={logo.image} 
@@ -175,7 +176,7 @@ export default function PartnersMarquees() {
                   {allLogos.map((logo, idx) => (
                     <div
                       key={`duplicate-${idx}`}
-                      className="flex items-center justify-center w-full h-20 bg-muted border-border rounded-lg border-[#9C9C9C] hover:border-accent transition-colors duration-300 flex-shrink-0 p-2"
+                      className="flex items-center justify-center w-full h-20 bg-muted border-border border-2 rounded-lg border-[#9C9C9C] hover:border-accent transition-colors duration-300 flex-shrink-0 p-2"
                     >
                       <Image 
                         src={logo.image} 
