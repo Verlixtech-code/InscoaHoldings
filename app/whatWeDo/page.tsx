@@ -1,7 +1,8 @@
 import ContactBanner from "@/components/contactBanner";
 import InscoaLogo from "@/components/InscoaLogo";
 import PageHero from "@/components/pageHero";
-import { divisions, getDivision, type DivisionProject } from "@/data/divisions";
+import ProjectList from "@/components/ProjectList";
+import { divisions, getDivision } from "@/data/divisions";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -138,11 +139,11 @@ export default async function WhatWeDo({
               <h3 className="text-center font-Headings text-2xl font-semibold text-gray-900 sm:text-3xl">
                 List of Projects {division.tabLabel}
               </h3>
-              <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {division.projects.map((project) => (
-                  <ProjectCard key={project.title} project={project} />
-                ))}
-              </div>
+              <ProjectList
+                key={division.slug}
+                projects={division.projects}
+                pageSize={division.slug === "engineering" ? 14 : undefined}
+              />
             </div>
           )}
         </div>
@@ -155,23 +156,5 @@ export default async function WhatWeDo({
 
       <InscoaLogo />
     </div>
-  );
-}
-
-function ProjectCard({ project }: { project: DivisionProject }) {
-  return (
-    <article className="flex flex-col rounded-xl border border-slate-200 p-5 transition-shadow duration-200 hover:shadow-md">
-      {project.party && (
-        <p className="mb-2 text-xs font-medium text-emerald-600">
-          {project.party}
-        </p>
-      )}
-      <h4 className="text-base font-semibold leading-snug text-blue-900">
-        {project.title}
-      </h4>
-      {project.value && (
-        <p className="mt-2 text-xs text-slate-500">{project.value}</p>
-      )}
-    </article>
   );
 }
