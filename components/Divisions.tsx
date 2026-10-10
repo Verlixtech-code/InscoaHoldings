@@ -1,26 +1,31 @@
 "use client";
 
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const divisions = [
   {
     title: "Inscoa Consultancy",
+    slug: "consultancy",
     description:
       "Business development, project facilitation and investment advisory for local and international clients.",
   },
   {
     title: "Inscoa Engineering",
+    slug: "engineering",
     description:
       "Electro-mechanical installation, pipe fitting, MEP and turnkey construction execution.",
   },
   {
     title: "Inscoa Real Estate",
+    slug: "real-estate",
     description:
       "Property and infrastructure development ventures across Sri Lanka.",
   },
   {
     title: "Inscoa Supply & Services",
+    slug: "supply-services",
     description:
       "Trusted import/export sourcing across engineering, construction and industrial products.",
   },
@@ -104,10 +109,13 @@ function Card({ division }: { division: (typeof divisions)[0] }) {
         {division.description}
       </p>
 
-      {/* <button className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#1B4F8C] py-3 text-sm font-medium text-white transition hover:bg-[#173f77]">
-        Learn more
+      <Link
+        href={`/whatWeDo?division=${division.slug}`}
+        className="mt-4 flex w-full items-center justify-center gap-2 rounded-lg bg-[#1B4F8C] py-3 text-sm font-medium text-white transition hover:bg-[#173f77]"
+      >
+        View More
         <ArrowRight size={16} />
-      </button> */}
+      </Link>
     </div>
   );
 }
