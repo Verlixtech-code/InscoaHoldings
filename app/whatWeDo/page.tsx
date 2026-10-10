@@ -1,6 +1,7 @@
 import ContactBanner from "@/components/contactBanner";
 import InscoaLogo from "@/components/InscoaLogo";
 import PageHero from "@/components/pageHero";
+import PartnersMarquees from "@/components/partnersMarquees";
 import ProjectList from "@/components/ProjectList";
 import { divisions, getDivision } from "@/data/divisions";
 import { ArrowRight } from "lucide-react";
@@ -148,6 +149,8 @@ export default async function WhatWeDo({
           )}
         </div>
       </section>
+
+      <PartnersMarquees />
 
       <ContactBanner
         title="Ready to Work With INSCOA?"
