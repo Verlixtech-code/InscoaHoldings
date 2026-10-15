@@ -29,6 +29,8 @@ export interface Division {
   tabLabel: string;
   heroTitle: string;
   heading: string;
+  /** Main picture at the top of this division's tab, e.g. "/images/divisions/engineering.webp" */
+  image?: string;
   intro: string[];
   ctaLabel: string;
   services?: { heading: string; items: string[]; highlight: string };
@@ -43,6 +45,7 @@ export const divisions: Division[] = [
     tabLabel: "Consultancy",
     heroTitle: "What We Do | INSCOA Consultancy Division",
     heading: "INSCOA Consultancy Division",
+    image: "/Inscoa consultancy.png",
     intro: [
       "Division has a decade of expertise in dealing with leading international construction companies for mega development projects in Sri Lanka. The company is involved as a facilitator and local infrastructure provider for major infrastructure development projects. As a truly Sri Lankan corporate citizen, the company has thrived in the corporate world and beyond by liaising with government agencies for the implementation of country's development projects and its smooth operations.",
       "Through Inscoa Business Development, we have ventured into a variety of construction projects such as Water Treatments, Power Generation, roads, highways, expressways, bridges, buildings, town development, shopping malls, complexes and stores.",
@@ -79,6 +82,7 @@ export const divisions: Division[] = [
     tabLabel: "Engineering",
     heroTitle: "What We Do | INSCOA Engineering Division",
     heading: "INSCOA Engineering Division",
+    image: "/engineering.jpeg",
     intro: [
       "Undoubtedly, our forte. Inscoa Engineering Division is proud of the critical role that the company has played in Sri Lanka's development, especially in relation to improving and renovating the country's primary infrastructure facilities. In collaboration with many of our international investors and construction firms, Inscoa Engineering has been involved in several projects relating to the construction of infrastructural facilities. As Sri Lanka strives to break away from its lower-middle income status, Inscoa Engineering stands ready to offer its support and expertise. Inscoa Engineering will not be complacent about our accomplishments but will dedicate ourselves to the strengthening of business structure by expanding our capabilities in the fields of project planning, engineering, and design to ensure customer satisfaction.",
       "We endeavour to forge long-term relationships with all our clients so both sides can benefit from a better understanding of each other's requirements. To ensure clear communication we always guarantee our client's direct access to senior managerial staff.",
@@ -210,6 +214,7 @@ export const divisions: Division[] = [
     tabLabel: "Real Estate",
     heroTitle: "What We Do | INSCOA Real Estate Division",
     heading: "INSCOA Real Estate Division",
+    image: "/Inscoa consultancy.png",
     intro: [
       "Inscoa Real Estate is part of INSCOA Holdings' diversified portfolio, contributing to property and infrastructure development ventures across Sri Lanka, including housing complex development, as part of the group's broader project development activities.",
       "We bring the same engineering discipline that sits behind every INSCOA project to property development, from the first feasibility conversation through to construction.",
@@ -221,6 +226,7 @@ export const divisions: Division[] = [
     tabLabel: "Supply & Services",
     heroTitle: "What We Do | INSCOA Supply & Services",
     heading: "INSCOA Supply & Services Division",
+    image: "/Inscoa Supply and Service.png",
     intro: [
       "Inscoa Supply and Services is in import/export firm that we support various material trade negotiating orders on behalf of our customers in Sri Lanka as an indenting firm. We have genuine suppliers' worldwide and good clients in Sri Lanka who has got used to purchase cargo through us. This is because of the service provided by us having a close/genuine business relationship.",
       "Inscoa Trading Company is the one place where you can believe and better sourcing service provider for you",

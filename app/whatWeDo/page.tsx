@@ -55,7 +55,7 @@ export default async function WhatWeDo({
           {/* Overview card */}
           <div className="rounded-3xl border border-gray-200 bg-white p-4 shadow-sm sm:p-8">
             <Image
-              src="/What we do.webp"
+              src={division.image ?? "/What we do.webp"}
               alt={division.heading}
               width={1200}
               height={450}
