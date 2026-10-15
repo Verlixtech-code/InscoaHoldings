@@ -139,6 +139,11 @@ export default async function WhatWeDo({
           {/* Trusted by (Supply & Services) */}
           {division.slug === "supply-services" && (
             <div className="mt-14">
+              <div className="mb-10 px-5 text-center sm:px-8 lg:px-12">
+                <h2 className="font-Headings text-2xl font-semibold text-gray-900 md:text-3xl">
+                  Key Associated Partners
+                </h2>
+              </div>
               <TrustedBy />
             </div>
           )}
