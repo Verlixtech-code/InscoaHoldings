@@ -1,3 +1,4 @@
+
 export type DivisionSlug =
   | "consultancy"
   | "engineering"
@@ -10,6 +11,19 @@ export interface DivisionProject {
   value?: string;
 }
 
+export interface GalleryItem {
+  /** Text shown on the card, e.g. "Road Construction Kalutara" */
+  title: string;
+  /** Image path under /public, e.g. "/images/gallery/engineering/road-kalutara.jpg" */
+  image: string;
+  /** More photos of the same project, shown in the popup after the cover image */
+  images?: string[];
+  /** Optional description for screen readers (defaults to title) */
+  alt?: string;
+  /** Optional link for "See More". Without it, "See More" opens a popup with this project's photos. */
+  href?: string;
+}
+
 export interface Division {
   slug: DivisionSlug;
   tabLabel: string;
@@ -19,6 +33,7 @@ export interface Division {
   ctaLabel: string;
   services?: { heading: string; items: string[]; highlight: string };
   projects?: DivisionProject[];
+  gallery?: GalleryItem[];
   sections?: { heading: string; paragraphs: string[] }[];
 }
 
@@ -114,6 +129,80 @@ export const divisions: Division[] = [
        value: " ",
       },
 
+    ],
+    // ---- Project Gallery ----
+    // Put photos in /public/images/gallery/engineering/ and list them here.
+    // Cards fill the grid in this order: wide, narrow, narrow, wide, ...
+    gallery: [
+      {
+        title: "Road Construction Kalutara",
+        image: "/Project Gallery 1.svg",
+        images: [
+           "/images/Projects/Road Construction (1).webp",
+           "/images/Projects/Road Construction (2).webp",
+           "/images/Projects/Road Construction (3).webp",
+           "/images/Projects/Road Construction (4).webp",
+           "/images/Projects/Road Construction (5).webp",
+           "/images/Projects/Road Construction (6).webp",
+        
+           
+        ],
+      },
+      {
+        title: "Steel Fabrication Kalutara",
+        image: "/images/Projects/Steel Fabrication (1).webp",
+         images: [
+           "/images/Projects/Steel Fabrication (2).webp",
+           "/images/Projects/Steel Fabrication (3).webp",
+           "/images/Projects/Steel Fabrication (4).webp",
+           "/images/Projects/Steel Fabrication (5).webp",
+           
+           "/images/Projects/Steel Fabrication (6).webp",
+           "/images/Projects/Steel Fabrication (7).webp",
+           
+
+
+
+
+           
+         
+        
+        
+           
+        ],
+      },
+      {
+        title: "Jaffna Water Project",
+        image: "/images/Projects/Jaffna Water Project (7).webp",
+         images: [
+           "/images/Projects/Jaffna Water Project (2).webp",
+           "/images/Projects/Jaffna Water Project (3).webp",
+           "/images/Projects/Jaffna Water Project (4).webp",
+           "/images/Projects/Jaffna Water Project (5).webp",
+           "/images/Projects/Jaffna Water Project (1).webp",
+           "/images/Projects/Jaffna Water Project (6).webp",
+           "/images/Projects/Jaffna Water Project (8).webp",
+           "/images/Projects/Jaffna Water Project (9).webp",
+        
+           
+        ],
+      },
+      {
+        title: "Electro Mechanical Installation Kalutara Project",
+        image: "/images/Projects/Electro Mechnical Installation Kalutara Project (10).webp",
+         images: [
+           "/images/Projects/Electro Mechnical Installation Kalutara Project (2).webp",
+           "/images/Projects/Electro Mechnical Installation Kalutara Project (3).webp",
+           "/images/Projects/Electro Mechnical Installation Kalutara Project (4).webp",
+           "/images/Projects/Electro Mechnical Installation Kalutara Project (5).webp",
+           "/images/Projects/Electro Mechnical Installation Kalutara Project (6).webp",
+           "/images/Projects/Electro Mechnical Installation Kalutara Project (7).webp",
+           "/images/Projects/Electro Mechnical Installation Kalutara Project (1).webp",
+  
+        
+           
+        ],
+      },
     ],
   },
   {
