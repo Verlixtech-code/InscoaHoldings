@@ -4,6 +4,7 @@ import PageHero from "@/components/pageHero";
 import PartnersMarquees from "@/components/partnersMarquees";
 import ProjectGallery from "@/components/ProjectGallery";
 import ProjectList from "@/components/ProjectList";
+import TrustedBy from "@/components/TrustedBy";
 import { divisions, getDivision } from "@/data/divisions";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
@@ -135,6 +136,13 @@ export default async function WhatWeDo({
             </div>
           ))}
 
+          {/* Trusted by (Supply & Services) */}
+          {division.slug === "supply-services" && (
+            <div className="mt-14">
+              <TrustedBy />
+            </div>
+          )}
+
           {/* Project list */}
           {division.projects && (
             <div className="mt-14">
@@ -146,6 +154,16 @@ export default async function WhatWeDo({
                 projects={division.projects}
                 pageSize={division.slug === "engineering" ? 14 : undefined}
               />
+              {division.slug === "consultancy" && (
+                <div className="mt-12 mx-auto max-w-7xl">
+                  <div className="px-5 text-center sm:px-8 lg:px-12">
+                    <h2 className="font-Headings text-2xl font-semibold text-gray-900 md:text-3xl">
+                      Key Associated Partners
+                    </h2>
+                  </div>
+                  <PartnersMarquees />
+                </div>
+              )}
             </div>
           )}
 
@@ -157,13 +175,6 @@ export default async function WhatWeDo({
           )}
         </div>
       </section>
-
-      <div className="px-5 md:pt-4 text-center sm:px-8 lg:px-12">
-        <h2 className="font-Headings text-2xl font-semibold text-gray-900 md:text-3xl ">
-          Key Associated Partners
-        </h2>
-      </div>
-      <PartnersMarquees />
 
       <ContactBanner
         title="Ready to Work With INSCOA?"
