@@ -4,6 +4,7 @@ import PageHero from "@/components/pageHero";
 import PartnersMarquees from "@/components/partnersMarquees";
 import ProjectGallery from "@/components/ProjectGallery";
 import ProjectList from "@/components/ProjectList";
+import TrustedBy from "@/components/TrustedBy";
 import { divisions, getDivision } from "@/data/divisions";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
@@ -134,6 +135,13 @@ export default async function WhatWeDo({
               />
             </div>
           ))}
+
+          {/* Trusted by (Supply & Services) */}
+          {division.slug === "supply-services" && (
+            <div className="mt-14">
+              <TrustedBy />
+            </div>
+          )}
 
           {/* Project list */}
           {division.projects && (
