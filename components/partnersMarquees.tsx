@@ -8,7 +8,7 @@ type LogoItem = {
 };
 
 const row1: LogoItem[] = [
-  { name: "MarqueesImg01", image: "logos/image 41.svg" },
+  { name: "MarqueesImg01", image: "logos/image 52.svg" },
   { name: "MarqueesImg02", image: "logos/image 42.svg" },
   { name: "MarqueesImg03", image: "logos/image 43.svg" },
   { name: "MarqueesImg04", image: "logos/image 49.svg" },
@@ -20,6 +20,11 @@ const row2: LogoItem[] = [
   { name: "MarqueesImg07", image: "logos/image 48.svg" },
   { name: "MarqueesImg08", image: "logos/image 44.svg" },
   { name: "MarqueesImg09", image: "logos/image 51.svg" },
+  { name: "MarqueesImg10", image: "logos/image 53.svg" },
+  { name: "MarqueesImg11", image: "logos/image 54.svg" },
+  { name: "MarqueesImg12", image: "logos/image 55.svg" },
+  { name: "MarqueesImg13", image: "logos/image 56.svg" },
+  { name: "MarqueesImg14", image: "logos/image 57.svg" },
 ];
 
 // Combine both rows
