@@ -2,6 +2,7 @@ import ContactBanner from "@/components/contactBanner";
 import InscoaLogo from "@/components/InscoaLogo";
 import PageHero from "@/components/pageHero";
 import PartnersMarquees from "@/components/partnersMarquees";
+import ProjectGallery from "@/components/ProjectGallery";
 import ProjectList from "@/components/ProjectList";
 import { divisions, getDivision } from "@/data/divisions";
 import { ArrowRight } from "lucide-react";
@@ -54,7 +55,7 @@ export default async function WhatWeDo({
           {/* Overview card */}
           <div className="rounded-3xl border border-gray-200 bg-white p-4 shadow-sm sm:p-8">
             <Image
-              src="/Inscoa Factory.png"
+              src={division.image ?? "/What we do.webp"}
               alt={division.heading}
               width={1200}
               height={450}
@@ -145,6 +146,13 @@ export default async function WhatWeDo({
                 projects={division.projects}
                 pageSize={division.slug === "engineering" ? 14 : undefined}
               />
+            </div>
+          )}
+
+          {/* Project gallery (Engineering) */}
+          {division.gallery && (
+            <div className="mt-14">
+              <ProjectGallery key={division.slug} items={division.gallery} />
             </div>
           )}
         </div>

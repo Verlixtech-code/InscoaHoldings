@@ -68,7 +68,7 @@ export default function AboutCard() {
 
             <div>
               <Image
-                src="/Inscoa Factory.png"
+                src="/Inscoa Factory.svg"
                 alt="Engineering"
                 width={700}
                 height={450}

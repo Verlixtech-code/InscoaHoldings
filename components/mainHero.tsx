@@ -7,7 +7,7 @@ const MainHero = () => {
     <div className="relative w-full h-[100vh] max-md:mt-8">
       {/* Background Image */}
       <Image
-        src="/mainHero.svg"
+        src="/MainHero1.svg"
         alt="Main Hero Image"
         fill
         className="object-cover"
@@ -18,7 +18,7 @@ const MainHero = () => {
       {/* <div className="absolute inset-0 bg-black/40" /> */}
 
       {/* Hero Content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center text-white">
+      <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center text-white ">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-2 md:mb-4">
           Engineering Sri Lanka's
         </h1>
