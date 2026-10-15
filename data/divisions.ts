@@ -45,7 +45,7 @@ export const divisions: Division[] = [
     tabLabel: "Consultancy",
     heroTitle: "What We Do | INSCOA Consultancy Division",
     heading: "INSCOA Consultancy Division",
-    image: "/Inscoa consultancy.webp",
+    image: "/Inscoa Consultancy.png",
     intro: [
       "Division has a decade of expertise in dealing with leading international construction companies for mega development projects in Sri Lanka. The company is involved as a facilitator and local infrastructure provider for major infrastructure development projects. As a truly Sri Lankan corporate citizen, the company has thrived in the corporate world and beyond by liaising with government agencies for the implementation of country's development projects and its smooth operations.",
       "Through Inscoa Business Development, we have ventured into a variety of construction projects such as Water Treatments, Power Generation, roads, highways, expressways, bridges, buildings, town development, shopping malls, complexes and stores.",
@@ -214,7 +214,7 @@ export const divisions: Division[] = [
     tabLabel: "Real Estate",
     heroTitle: "What We Do | INSCOA Real Estate Division",
     heading: "INSCOA Real Estate Division",
-    image: "/Inscoa consultancy.webp",
+    image: "/Inscoa Consultancy.png",
     intro: [
       "Inscoa Real Estate is part of INSCOA Holdings' diversified portfolio, contributing to property and infrastructure development ventures across Sri Lanka, including housing complex development, as part of the group's broader project development activities.",
       "We bring the same engineering discipline that sits behind every INSCOA project to property development, from the first feasibility conversation through to construction.",

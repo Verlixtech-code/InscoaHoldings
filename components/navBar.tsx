@@ -118,14 +118,14 @@ export function NavBar() {
               </div>
             </div> */}
 
-            <Link
+            {/* <Link
               href="/productSupply"
               className={`transition hover:text-blue-800 ${
                 pathname === "/productSupply" ? "text-blue-800" : "text-black"
               }`}
             >
               Products & Supply
-            </Link>
+            </Link> */}
           </nav>
 
           {/* Contact Button */}
@@ -231,7 +231,7 @@ export function NavBar() {
               </div>
             )} */}
 
-            <Link
+            {/* <Link
               href="/productSupply"
               className={`hover:text-blue-800 ${
                 pathname === "/productSupply" ? "text-blue-800" : "text-black"
@@ -239,7 +239,7 @@ export function NavBar() {
               onClick={closeMobileMenu}
             >
               Products & Supply
-            </Link>
+            </Link> */}
 
             <Link
               href="/contactUs"
