@@ -50,7 +50,7 @@ function WhyCooseCard({ title, description, image }: whyChooseItem) {
 
 export default function WhyChooseInscoa() {
     return (
-        <div className="bg-[#2D3E92] py-16">
+        <div className="bg-white py-16">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
                 <div className="text-[32px] md:text-[36px] font-bold text-center mb-3 text-[#1e293b]">
                     Why Clients Choose INSCOA
