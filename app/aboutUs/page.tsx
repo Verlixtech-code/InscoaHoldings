@@ -11,7 +11,7 @@ export default function AboutUsPage() {
     return (
         <div className="pt-20">
             <PageHero
-                image="/AboutUs_Hero_Image.svg"
+                image="/About Us Hero.svg"
                 title="About INSCOA Holdings"
                 description="A Sri Lankan engineering and construction group built on trust, technical expertise and long-standing relationships with government agencies and international partners."
             />
